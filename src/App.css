@@ -6,15 +6,22 @@
   background: #242424;
 }
 
-body { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+body { 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  color: #aca7a7;
+}
+
+.titleApp span {
+  font-size: 30px;
+  font-style: italic;
+}
 
 .container-gb-square {
   max-width: 1200px;
-  background: saddlebrown;
   height: 600px;
   margin: auto;
   position: fixed;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -50,47 +57,28 @@ body { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Luci
   animation: t3 7s ease infinite;
 }
 
-
 @keyframes t1 {
-  0% {
-      transform: rotate(45deg) translateY(0px);
-  }
+  0% { transform: rotate(45deg) translateY(0px); }
 
-  50% {
-      transform:  rotate(45deg) translateY(20px);
-  }
+  50% { transform:  rotate(45deg) translateY(20px); }
 
-  100% {
-      transform: rotate(45deg) translateY(0px);
-  }
+  100% { transform: rotate(45deg) translateY(0px); }
 }
 
 @keyframes t2 {
-  0% {
-      transform: rotate(65deg) translateY(0px);
-  }
+  0% { transform: rotate(65deg) translateY(0px); }
 
-  50% {
-      transform: rotate(65deg) translateY(20px);
-  }
+  50% { transform: rotate(65deg) translateY(20px); }
 
-  100% {
-      transform: rotate(65deg) translateY(0px);
-  }
+  100% { transform: rotate(65deg) translateY(0px); }
 }
 
 @keyframes t3 {
-  0% {
-      transform: rotate(105deg) translateY(0px);
-  }
+  0% { transform: rotate(105deg) translateY(0px); }
 
-  50% {
-      transform: rotate(105deg) translateY(20px);
-  }
+  50% { transform: rotate(105deg) translateY(20px); }
 
-  100% {
-      transform: rotate(105deg) translateY(0px);
-  }
+  100% { transform: rotate(105deg) translateY(0px); }
 }
 
 .cardUsers {
@@ -139,20 +127,15 @@ body { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Luci
 
 @media screen and (max-width: 630px) {
   .cardUser {
-    
       transform: none;
       margin-top: 25px;
       display: inline-block;
       width: 80%;
   }
 
-  .cardHead h1 {
-    font-size: 5px;
-    
-  }
-  .cardUser .cardInfo {
-    font-size: 13px;
-  }
+  .cardHead h1 { font-size: 5px; }
+  
+  .cardUser .cardInfo { font-size: 13px; }
 
   .cardUser:hover { 
     transform: scale(1.02);
@@ -172,15 +155,14 @@ body { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Luci
 }
 
 @media screen and (max-width: 768px) {
-  .card-People {
-    margin: auto;
-  }
+  .container-gb-square { margin-top: 10%; }
+  .card-People { margin: auto; }
 }
 
 @media screen and (max-width: 560px) {
-  .App {
-    margin-left: -50px;
-  }
+  .App { margin-left: -50px; }
+
+  .titleApp span { font-size: 20px; }
 
   .App .titleApp {
     font-size: 30px;
@@ -188,15 +170,7 @@ body { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Luci
     margin-top: -20px;
     margin-bottom: -40px;
   }
-
-  .card-People {
-    background: yellow;
-    position: relative;
-  }
-  .card-Person{
-    padding: 20px;
-    background: salmon;
-  }
+  .card-Person{ padding: 20px; }
 
   .cardInfo{
     line-height: 15px;
