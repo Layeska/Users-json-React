@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background: #242424;
 }
 
 body { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
@@ -134,4 +135,85 @@ body { font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Luci
 .cardInfo {
   font-size: 16px;
   width: 50%;
+}
+
+@media screen and (max-width: 630px) {
+  .cardUser {
+    
+      transform: none;
+      margin-top: 25px;
+      display: inline-block;
+      width: 80%;
+  }
+
+  .cardHead h1 {
+    font-size: 5px;
+    
+  }
+  .cardUser .cardInfo {
+    font-size: 13px;
+  }
+
+  .cardUser:hover { 
+    transform: scale(1.02);
+    margin: 30px auto;
+  }
+
+  .card-Person img {
+    width: 100px;
+    margin: 20px auto;
+  }
+
+  .cardInfo {
+    margin: auto;
+    width: 60%;
+    line-height: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-People {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .App {
+    margin-left: -50px;
+  }
+
+  .App .titleApp {
+    font-size: 30px;
+    margin-left: 80px;
+    margin-top: -20px;
+    margin-bottom: -40px;
+  }
+
+  .card-People {
+    background: yellow;
+    position: relative;
+  }
+  .card-Person{
+    padding: 20px;
+    background: salmon;
+  }
+
+  .cardInfo{
+    line-height: 15px;
+    overflow-y: auto;    
+  }
+
+  .cardInfo::-webkit-scrollbar {
+    width: 2.3px;
+    height: 8px;
+  }
+
+  .cardInfo::-webkit-scrollbar-track {
+    background-color: darkgrey;
+    border-radius: 25px;
+  }
+
+  .cardInfo::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+  }
 }
