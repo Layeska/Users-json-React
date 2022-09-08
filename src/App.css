@@ -163,6 +163,11 @@ body {
 @media screen and (max-width: 560px) {
   .App { margin-left: -50px; }
 
+  .container-gb-square { 
+    margin-top: -10%; 
+    width: 20%;
+  }
+
   .titleApp span { font-size: 20px; }
 
   .App .titleApp {
