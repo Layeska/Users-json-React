@@ -3,12 +3,13 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background: #242424;
+  
 }
 
 body { 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
   color: #aca7a7;
+  background: #242424;
 }
 
 .titleApp span {
